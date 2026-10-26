@@ -1,0 +1,416 @@
+{
+  "01_double_ma": {
+    "source_sha256": "572646c6b1467609ebc822cf697291c5b2ddc2d60b4c8104d030032b7149cb8a",
+    "program_sha256": "e750b838381f4d183e49c8e89f77140c2d055de9778c5ef45a72de08a79b6ca8",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "02_boll_breakout": {
+    "source_sha256": "fb1a43e5ccac3fc844f812084029442296420811e38fb5792f8504c4a52199a0",
+    "program_sha256": "cd16d49ca63284252ad2168334383780233f447b85622d681127e7f2996235db",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "03_rsi_mean_reversion": {
+    "source_sha256": "94c5f42e431bdaea74318e8b8621e8a2a1cd6de2f55a84a6a2dd224254697592",
+    "program_sha256": "c743f938702ec677c27be8395f43a5cc854ddd3c6b403d84f724ff911ee995c3",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "04_dual_thrust": {
+    "source_sha256": "8d0da557007080063742a36679078c065f3e0cb98d17367b71a384eb65a4c441",
+    "program_sha256": "d31c55ed0eace30cee35fc3a87e30b3382391e1ca67b9d46a4b4958b1f4b5c37",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "05_turtle_trading": {
+    "source_sha256": "ba9bfc9e7890668930142ce104054491fa036d0baf6371bcd422bad49fa3cfe3",
+    "program_sha256": "dbcd9929393c91b5b9ccbc8347b262bc29136d3eaa32f0beec6a6380d27cde95",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "06_macd_trend": {
+    "source_sha256": "1891bd35939f7700677325118e3c6694aa457ad88c6b3a7607a149cbfd864d5a",
+    "program_sha256": "c446d1ff88bd0e63a5607b32a589b17315ac45ffbbda7daf51ee9a95db32a1b7",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "07_kdj_signal": {
+    "source_sha256": "f2a580419e70f186347c496c86e189539ca48221c3f2bbaed3d6fbcd2f280cc4",
+    "program_sha256": "19594ee6eda452b60b821b4e55fca3cafca7687ddeecf6a0d375cf2e5d8600c3",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "08_cci_breakout": {
+    "source_sha256": "0b8344684b2b49bd34bc16c83f708a95282579deb9710d1b71b266092475dada",
+    "program_sha256": "fb866155d77e6ab9a6531f8af2b2740ea40a42dcc9e6d28ec9575696496f119c",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "09_atr_stop_loss": {
+    "source_sha256": "be729303e0f9b5f9c47f3167ba4fe79f743ae16f5fa4cc449504314cb52c8dfa",
+    "program_sha256": "8eaa74f0bb7e88474a10a9e503f7b2fd719f5edca7f0548d1986d5ef5beaf959",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "10_momentum_breakout": {
+    "source_sha256": "fcec261bae3a6e0390be4c8e4e14d64d492ee896645f71c61bf24c102b5f21da",
+    "program_sha256": "eb0aebdc2ffedee292b1b82515add42350808cf5b0eecd36df4b1adfd8d84ff2",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "11_mean_reversion_zscore": {
+    "source_sha256": "d102407373b049cbbe4979ff0ae7eb0419c94dc981c4db77ab0b35c1cc8576bb",
+    "program_sha256": "a28cdc783e4acf9b08eb36f9fca7f496d36a62c7df26697abbf687d4e19f083b",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "12_grid_trading": {
+    "source_sha256": "8c1ebe95bd23d2db17d0e5b66ba9ae5a206028ba98b6cff5dc965e4f127731b3",
+    "program_sha256": "aa64558536a88a19a8ebda77fba42f2f82d669fb0c6ba43cd97faa1fbcc0d7c0",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "13_opening_range_breakout": {
+    "source_sha256": "51d8980a8ee0c7970596b856b3b253504b44c8cc492f8c138fb7145572f9818b",
+    "program_sha256": "6f0ab62b403f6cf4c33e2d9157f1e5c9de6666f57e49e5a1b927f86cdb059c5c",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "14_volume_price_trend": {
+    "source_sha256": "186148112c1bb335da20f355187a8e567c071640baf44c1abfd0cf160d34463f",
+    "program_sha256": "1c431ed56a8022701dfb7d54162b51c3407ae0b236b983b3508dff2a6bd736a4",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "15_donchian_channel": {
+    "source_sha256": "a8769e0e9379d4af689e75ea3d513c3db9d021dfc5d134342864905810d7e4cf",
+    "program_sha256": "f394b5623f90c1fab366caaa19149a8ed4954da6d6f49771cba84b29da2deea5",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "16_aroon_trend": {
+    "source_sha256": "d4e9b23e126834c31c0c2404e7367af92d4f90701696399d50caa08249601d23",
+    "program_sha256": "da3aead58408e1e3a3120e79cbf248499a39a4e04b2c03909a456be902e519bc",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "17_stochastic_rsi": {
+    "source_sha256": "6b2d93c89e7c58e4c944c8f6623d6ae0236bc47635db1b2cdfb3b937de996551",
+    "program_sha256": "b4ea5ee0ecadbfdba37b75d14b75c9a084fd4a6f4fe320c6a1e8589d52c552a0",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "18_bollinger_mean_reversion": {
+    "source_sha256": "50b45e1fb3ef767b8e6c247bc31642a649bdd6953004df0491098767c78d9651",
+    "program_sha256": "79dec0db8831521d7d7976af5821b6ba0689ca0a368bc6fe9ecbded679ae1f0f",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "18_parabolic_sar": {
+    "source_sha256": "460b1968978ec63d0343148f57b86b10cb536dea4a4919591a872014806e7c3d",
+    "program_sha256": "5ae5d99191fc5085584e9f1c807f2b7e26e914279919a8110bf80171f9a8ed0d",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "18_vwap_mean_reversion": {
+    "source_sha256": "670b21f4b7dc7277293c3c94dd66d2d265b214c8bff8e1adb335d345fa14f5c2",
+    "program_sha256": "1e96e1bb50faba3ed05459d66fafd424b22fd1f5d8d0461d168e62094323e490",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "19_atr_channel_breakout": {
+    "source_sha256": "86fb38aacabe84c8e48611ffb0bd5efc3917b6e2adc170362800710bbf576431",
+    "program_sha256": "e40c33f6560b78109b09ac27c4e37260d1aab63ae846cb5520d65531293eae39",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "19_ichimoku_cloud": {
+    "source_sha256": "3f74419a8b39d391e3bb828cdd03525efe59dc3bd6ba86b61107e3cf16e2a3bc",
+    "program_sha256": "166bfa7b0d063639d5dd7c1c86f119062c8c481311d3c13d6f9b5a2142737ccc",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "19_williams_r": {
+    "source_sha256": "f31a8d664fb0c3f8a4305cb67f65f4a731cdd109123a1d6e56ef33a31bb0582c",
+    "program_sha256": "c97e9fe6fe627120d62636de1d6689f8dfbe9aef8f1046d8d9620ffd549c5893",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "20_hull_ma": {
+    "source_sha256": "66dc52fe966cab9b7c18982eab56603c8076194c68194be19491a076beab59df",
+    "program_sha256": "9a7fd377acad7513f55c4225dea0d12f6122e3e8c10e3275bcdbc6f7d61965ba",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "21_keltner_channel": {
+    "source_sha256": "fdfdd2b2fa8df53a53e41cf45e91ed603966e39f34112258b463f8497c4e0c0c",
+    "program_sha256": "145ceb13d070e34b7b358a7a21245415a46818b0137a9abf48d620ec47014166",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "22_trix_trend": {
+    "source_sha256": "74d8eb7e3951f213750175557ae0e3fcc1470958b6eccb94cbcc195dc5d8e88e",
+    "program_sha256": "f4e5f99aa3f07ead2d55024af94c4c4a4eb022e7d636090950595610ec64e6b8",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "23_pivot_point": {
+    "source_sha256": "75d3a9f46a829fa39ceb53e22c785499304c16e687149c93cdf84f68688e4725",
+    "program_sha256": "cfb952cf77fe033bbfe44ea85a883a0fec7b66afffc4a99e6285849e82f7a820",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "24_r_breaker": {
+    "source_sha256": "88b0cc57cdab67c99f8dfea8be9e4ddbfa7e74948f83ed68ed3decad2a5f1138",
+    "program_sha256": "f22d59a67843cc70b0a797a29d74da125099fc9c459ffb83aca1eab445c052d9",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "25_multiperiod_ma": {
+    "source_sha256": "fdbafaea57780e4fbb95911c4d783a33e4e0fb4647586d63f05b37aaad31d9ec",
+    "program_sha256": "e89401447505afeb55ea564d8bdb65000582ff66a102fe131b235bfad4b84435",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "26_chaikin_money_flow": {
+    "source_sha256": "6677b84021241628b76b7de3e3083a34810be50b035c061dd5ec251ebd302cb8",
+    "program_sha256": "46de53dd029467afdf873d928cdf1cee64bd18ca2d75f67c22ae454c7fdba0d4",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "28_obv_trend": {
+    "source_sha256": "eb9dd48df7f28fa68dc5cf2a58ffd85792fc594723713e85a785f53735a92f0b",
+    "program_sha256": "352dec9cc9cf1c353eb667d2ca0948dad80c2bfb8e01dca54b18427a79b430c5",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "28_volatility_breakout": {
+    "source_sha256": "c09d0eef441439e68e70d4fa61b0752bac7e4713b758ee8604571526e6e65bd4",
+    "program_sha256": "07ec69a73df15e6afdd0820575425c0c52de9dcb2b17da65fb04823137b929e4",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "29_adx_trend_filter": {
+    "source_sha256": "ea666cf13aa10a9ac2a957b697d8a4f47214a4682fb144e52ca13b93ee81e76a",
+    "program_sha256": "7273ec43d449d04354336dbc5137fe5280baea1364f86015cf86722c312c24ac",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "30_supertrend": {
+    "source_sha256": "cf6cd9ddda9e1b871b69b7f667f8cb5c4506015151c16a905f5c6bd25eb382b5",
+    "program_sha256": "4daac656b6e86f4cdcc350c310d612558b4fd8a45155a81dcd50ad9c54965b90",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "31_vwap_mean_reversion": {
+    "source_sha256": "dc82468d180b7f14036d291e37284ff5ec43c04d395b804abcd13c9d7c37d3a3",
+    "program_sha256": "86fe6fe03eba0c687dc68f678b458a2986396396a97f58052edc2b5141bbb533",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "32_ichimoku_cloud": {
+    "source_sha256": "534d43c1a343fc4298cc6493e153ff74d239b4787c312c06f83a29b4601db078",
+    "program_sha256": "965614eacd638690c92de3bf9e0254049d3ec0a7290bb8ef124296861e56c281",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "32_linear_regression_channel": {
+    "source_sha256": "26e93acab2f15afd461ca2ff7bfbf03214c885bdde82c8a51549f5f9906cf7e1",
+    "program_sha256": "0c1bf6cf88d1ecedc78b9ac301d41b915e957a126d6d863c82ee3183cf035d5b",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "33_boll_mean_reversion": {
+    "source_sha256": "ca785c5a49f39444a8b47d8ed5025b14bd4f049c387dcdc12858451cbc537436",
+    "program_sha256": "7d31cd0c6accde4649459ba4c9fae32bcf267d14a39932b90e883a0ce6494860",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "34_vwap_breakout": {
+    "source_sha256": "ef6dce51cfdf1fb73c27657b40603f41380e5029d8a49567097b324a696e469b",
+    "program_sha256": "3c0677fab9bea3678adbe053f9ecca7b1924e59dbbf8cf301960133d0bf963d0",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "35_fibonacci_retracement": {
+    "source_sha256": "f49ceab2ff5f579d9a5fe408c85274c229b36a5b356787b2e21c9d0666da67a5",
+    "program_sha256": "77d87f45e93bae60faca1d5e5614537adbdf9978bb3b6d03ebbe257e8287528c",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "36_guppy_ma": {
+    "source_sha256": "2e03efa925711eebc6a44d6ccd2cf93443e6a448cf9b3c2f3ea7be7faa3f7ebe",
+    "program_sha256": "7eb2a8ff605304b6b2476eb81c9192734f610461f00fdcaea3444493af5cd5a6",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "37_volatility_breakout": {
+    "source_sha256": "ca4092e78d5f0b9cea3f0ffda924f3c237cb49b4ec2a253661ad0fc284865d9f",
+    "program_sha256": "bce708001144ea5884b5e4f537be52a53f0e80ca6995f8712362a6bfa6697722",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "38_boll_mean_reversion": {
+    "source_sha256": "114963cd0f223015c124ccd2f1685f6c5e0c6d590cc1732e20d6c98e22ad76e4",
+    "program_sha256": "e41e6873efe9217bb1a54a8fe051043416a4e2e8efac6a80533e27f31d7ccc8f",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "39_vwap_breakout_volume": {
+    "source_sha256": "2b610551cb4b8d82dbcc84cd98598f9a75f4b446a20905432fbdeb191e1bad0c",
+    "program_sha256": "1bbd196e65050ec9e0e2e1187268a689918a80f509a3a8e3f3d2e7fc08484208",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "40_momentum_acceleration": {
+    "source_sha256": "2d3e7185e3ab9187540c3faabd75bc74fb09ab71ada833586897f1b8512c85db",
+    "program_sha256": "d2dc5cf1082eee485a4fed9e92114c165f86bc3259ff80ed0c0b0748c3ee3e9c",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "41_bullish_ma_arrangement": {
+    "source_sha256": "596435a716db8f8d3f6c9ebea57757674e0dd97e6c35699b279e1cce826ad96c",
+    "program_sha256": "3142d799f27cde97f076bd97601a6bfe8a55cafc784f6d1911db92ed37755f9b",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "42_bollinger_mean_reversion": {
+    "source_sha256": "f742a481f5554c794a4a80cb4047d413788637de9ffaf864c46f4bd68850a05f",
+    "program_sha256": "07ceb2457049f8bcb99263217cfc8fc6e8d03697bd385f8095339ac3741da5a8",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "43_ma_crossover": {
+    "source_sha256": "e87ff7915b16f83c86837239338c3c8414196bb15bcddf26fb5f5b17791733b1",
+    "program_sha256": "8d9d402fa5bacd6af28e12c75a23909107903b25bf5a4aa7734105ecceaf5eab",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "44_guppy_ma_trend": {
+    "source_sha256": "0c7d06b92cd9d60bceb76fcf7fa93e335fb77bc5af7c90a5127cf74d73371d5b",
+    "program_sha256": "991d64bd3dc3945deb15bf7ccb7642da8a696921a056a6de3847e7f14872bcb9",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "45_trend_filtered_rsi": {
+    "source_sha256": "741897bec1cff68b217aafb1733a1d0463654e9f7a7dde5702401f6f494f2a9e",
+    "program_sha256": "6d2a964bfff6ae0e9455cc9bef49b87b4556b4073d227bd49fbb128a626d442f",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "57_adaptive_volatility_breakout": {
+    "source_sha256": "cb97ce11ea2a7f69d1da858b9b3eccd17bd267fa6e50658ad41057cf33485011",
+    "program_sha256": "3f73d8d121413db268c21384f7014f9ba96b9e089bc1e598e6f78b4d21112920",
+    "entry": "main",
+    "status": "source_program"
+  },
+  "64_kama_adaptive_trend": {
+    "source_sha256": "06dbc514172349ff23ef2b44f8882c69a2642dd05c6421866abbb88f49dfb24e",
+    "program_sha256": "df896cd5da737078df2462fe737db8defb321b508a8cb4d48b1c982d5fecd867",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "65_fractal_dimension_breakout": {
+    "source_sha256": "7e5348980342e32abf44e41b917a7e0ac6076263928acb3ababbbfd263065015",
+    "program_sha256": "d3a27d6c06b6fda40c20ba8166599a6c9e6baf484912a58889bd6975d286a7c0",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "66_chande_momentum_trend": {
+    "source_sha256": "50e9d25885b45b6db898b4e3b0b861f4799db953eaa31a8f6f9521a2ddf54f03",
+    "program_sha256": "e8c48ff87a16bcbcdd0d3e26e2801882dd48e2066581adc1556f236af27cff6a",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "67_squeeze_channel_breakout": {
+    "source_sha256": "3bc7caa58c5456427c4728cf534b5259391eb8ba30b9b403e352cbbc5f5a2cc4",
+    "program_sha256": "ee3152946ebdefd1bc299a2583cc61367d9e4b8d84c54909f73224ce3b03ac9a",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "68_range_expansion_index": {
+    "source_sha256": "b6a5fe7f06c41cbbfc1161ccafb32094c73e965d26e2b5a3c1227b8a1acea6a1",
+    "program_sha256": "31d48643106624ee726c77ee51b5e1c12fa641c3f4cca8af13934b9bd35dd9bd",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "69_intraday_vwap_band_reversion": {
+    "source_sha256": "0a42d7a83e27120fb7e94b4d4a3a639f77a0c862a92d85e1f5da5a21f4c6d407",
+    "program_sha256": "f243fefc45712a81d71683c36c9d68c7075b447f7fbba15b18dd7788aa8bcddf",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "70_rsi_divergence_reversal": {
+    "source_sha256": "2d92713e37c20b45f17dc8001068052cbc2263e4b8b0a2078d9a9f29dcb51d2f",
+    "program_sha256": "c6ac4180bb5c58e5070db37ba007f54950afb7c87c83404effb2be2627c0c1c6",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "71_boll_percent_b_reversion": {
+    "source_sha256": "4450c5d6c4d572763da4012adb1c899ccc33a3d7e8e8318029c681066eebe79d",
+    "program_sha256": "ed3b32e13c266f4897d3423066c64f0736889b5f77292c87798368d2797453e1",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "72_volatility_contraction_reversion": {
+    "source_sha256": "2d99fa7f9137ba8978334ebed06ff6d3c3c5ed9926e7269a2d5ea626e1ae36b9",
+    "program_sha256": "efaf6716c3d2d06355bd4169abcaffec3f3f9101e56b6eab546e15f6f42e91c8",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "73_atr_normalized_zscore": {
+    "source_sha256": "9c7ac56edec48f14a3897c6f6eec1c22fe8ace6c3eb15e99532c2973aa1637f9",
+    "program_sha256": "e8045ff81cbcbaf3dcb7286c8df395b2778062be8b79c732c33803fa3256e389",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "74_mfi_money_flow_reversal": {
+    "source_sha256": "471df34f96263f47816d76f698f43686699eff85460d9c9ff8a21f89c528b2c0",
+    "program_sha256": "b3beb7470588530fb462cd31c60f89ef2865be123ffc8ab4fabfadcc2bbcc55a",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "75_volume_profile_value_area": {
+    "source_sha256": "882b47b67bde3dcc8f212e7b00789f1fa6abecf63ec29fa7b4e8be7031446d70",
+    "program_sha256": "1f89dd81868e35968d807286ce3b3bc62c2cbd12966d43663845c15c64c80fde",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "76_open_interest_momentum": {
+    "source_sha256": "558f9da52f289fe2ae1659cc3e0e8b44711e64601bbbeb6c6c4909d435f24496",
+    "program_sha256": "eacf347e59730f81f027ad7dd4e58affba39a69cef2b5388a58291b8a7ca0d8a",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "77_turnover_rate_breakout": {
+    "source_sha256": "f82db8e77b14356a8c24264471e5d4e4b942e1b06b47f85b15a11e5d7def64e8",
+    "program_sha256": "11df45ca0194ed227ea2434d1f9e065138c4d0499634ba89998529d79f7cc6cb",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "78_negative_volume_index": {
+    "source_sha256": "1453c4b7fc8d02a96aa8e466ece8d7e09d20953bd92759bfe1193a8c0e955b1c",
+    "program_sha256": "7e7dbf3a0d7b65fb06138ceb4b99499e7da2fa8ec4cf2f90cd7f768b4502bdb1",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "89_time_window_breakout": {
+    "source_sha256": "3b20a8547e15cebe56a1ba24abaec0dfb3d906b01bca57505a575f31714852d6",
+    "program_sha256": "53fb6c08d0e9ef9e02e489ede3f71451b05db6c6c7963a3ed12ec0a260a415c2",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "90_trailing_atr_pyramid": {
+    "source_sha256": "8b66dac32cdae4b3702e309ba58fb675dd957bd6bc6c059351a01b97dfef00c4",
+    "program_sha256": "8daa55d68208bb2d6699b3f93b931056acc8407a04aafc827e030af02a5af40d",
+    "entry": "run_single",
+    "status": "source_program"
+  },
+  "92_drawdown_guard_trend": {
+    "source_sha256": "5d015ea90f4f4203ed99bbf7f5ad7c97fae48014c39a04b87b49d7d8c760be5d",
+    "program_sha256": "0acaaeaf8ae80fffd2f3e73eba4b135bd89b7a509267626d09ef69a0b718ca7b",
+    "entry": "run_single",
+    "status": "source_program"
+  }
+}

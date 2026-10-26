@@ -1,0 +1,34 @@
+[project]
+name = "cta_strategy_analysis"
+version = "0.1.0"
+description = "CTA 团队策略回测框架（实盘 drop-in 兼容版）"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "h5py>=3.8",
+    "tqdm>=4.65",
+    "pyyaml>=6.0",
+    "openpyxl>=3.1",
+    "matplotlib>=3.7",
+    "pydantic>=2.0",
+    "sortedcontainers>=2.4",
+    "numba>=0.59",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.1",
+    "mypy>=1.5",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]

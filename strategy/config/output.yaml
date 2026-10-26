@@ -1,0 +1,5 @@
+# 输出目录 ————————————————————————————————————————
+
+output:
+  dir:    output                  # 相对 strategy/ 目录
+  prefix: ""                      # 留空则按 --strategy / --adapter 自动推导

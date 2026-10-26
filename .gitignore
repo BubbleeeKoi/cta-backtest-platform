@@ -1,0 +1,76 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.Python
+build/
+dist/
+
+# ── 虚拟环境 ──
+.venv/
+venv/
+env/
+
+# ── 测试 / 缓存 ──
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ── IDE ──
+.idea/
+.vscode/
+*.swp
+*.swo
+.cursor/
+
+# ── macOS ──
+.DS_Store
+._*
+__MACOSX/
+
+# ── 回测产物 ──
+# baseline 文件本身要纳入版本控制（tests/baseline/*.csv），但运行时输出不进
+strategy/output/
+output/
+
+# ── 内部策略匹配文档 ──
+strategy/STRATEGY_MATCHING.md
+strategy/STRATEGY_SUMMARY.md
+
+# ── 回归测试当前态（每次 compare_baseline check 时重生成） ──
+strategy/tests/current/
+
+# ── 数据文件 ──
+*.h5
+*.hdf5
+*.pickle
+*.pkl
+# 内置商品指数行情通过 Git LFS 纳入仓库，克隆后可直接回测。
+!data/future_price/*.h5
+
+# ── 非批量回测代码资产 ──
+# 研究论文与训练权重不属于当前 69 策略批量回测源码。
+eaasy/
+strategy/models/*.pt
+
+# ── 临时文件 ──
+*.log
+*.tmp
+*~
+
+# ── Office (Word / Excel) 临时锁文件 ──
+# Word / Excel 打开 docx / xlsx 时会在同目录写一份 .~filename 或 ~$filename
+# 锁文件；它们不属于交付产物，绝对不能进版本控制。
+.~*
+~$*
+
+# ── 但 tests/baseline/*.csv 要追踪 ──
+!tests/baseline/*.csv
+
+# ── tests/baseline/signals/ 仅本地辅助产物，CI 不追踪 ──
+strategy/tests/baseline/signals/

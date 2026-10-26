@@ -1,0 +1,13 @@
+# 策略开关 ——————————————————————————————————————————————
+# 列出所有可用策略包，并通过 enabled 决定本次回测是否参与。
+# 注意：package 必须 = strategies/<package>/ 目录名。
+
+strategies:
+  - package: ma5ma10
+    enabled: true
+    params:
+      # 简单移动平均线周期，单位：完整交易日
+      fast_period: 5
+      slow_period: 10
+      timeframe: 1d       # 通用 K 线周期：15m / 1h / 1d
+      direction: both     # 通用方向：long / short / both

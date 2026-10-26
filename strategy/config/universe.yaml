@@ -1,0 +1,5 @@
+# 品种 / 合约清单 ————————————————————————————————
+# items 留空 [] 则自动 = future_list.csv 中 trade=True 的全部品种
+
+level: product                    # product | contract
+items: []                         # 留空走默认；显式列出可锁定测试范围

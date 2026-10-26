@@ -1,0 +1,30 @@
+# 数据源路径 ——————————————————————————————————————
+# 默认读取仓库内置的 HDF5 行情；也可以按机器覆盖为其他数据源。
+#
+# 用途差异：
+#   hdf5_index    研究回测：商品指数 HDF5（多合约加权指数，历史长）
+#   live_archive  对账回测：与实盘同源的 minute bar 归档（IT 接入实盘行情后落地）
+#
+# 切换方式:
+#   yaml 改 data_source.type 即可；也可在 CLI 用 --data-source 临时覆盖。
+# 老版本仅有 ``data_dir:`` 字段时，自动等价于 ``type: hdf5_index`` + 该 data_dir。
+
+data_source:
+  type: hdf5_index    # hdf5_index | live_archive
+
+  hdf5_index:
+    data_dir: ../data/future_price
+
+  live_archive:
+    # 实盘行情服务每日落地的 minute bar 目录；每个品种一个文件。
+    # IT 接入后填实际路径；schema 由 data_sources/live_archive.py 内部规整。
+    bar_dir: /path/to/live/minute_bars
+    file_pattern: "{symbol}.parquet"
+    schema_version: v1
+
+# ── 向后兼容（旧字段；如果设了 data_source.type 则忽略本节） ──
+data_dir: ../data/future_price
+
+# 项目内置 csv 默认在 strategy/data/ 下，一般不用改
+# future_list_path:   /custom/path/future_list.csv
+# industry_map_path:  /custom/path/industry_map.csv

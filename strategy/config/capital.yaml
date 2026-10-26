@@ -1,0 +1,10 @@
+# 资金分配 + Adapter 规则 ————————————————————————————
+# 每策略基准名义市值（单品种单笔目标）；adapter 在此基础上做组合层调控。
+
+per_strategy_capital: 1_000_000   # 每策略单品种单笔目标资金（元）
+
+adapter:
+  type: passthrough               # passthrough | capped_capital | conflict_dedup
+
+  # ─── capped_capital 模式专用参数 ───
+  per_symbol_capital_cap: 2_000_000   # 单品种跨策略总名义市值上限
