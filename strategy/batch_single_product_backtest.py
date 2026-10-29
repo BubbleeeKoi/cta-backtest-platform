@@ -58,6 +58,10 @@ def main() -> int:
     parser.add_argument("--plots", action="store_true", help="额外生成逐品种 PNG（批量默认关闭）")
     parser.add_argument("--directions", nargs="+", choices=DIRECTIONS, default=["both"])
     parser.add_argument("--timeframes", nargs="+", choices=TIMEFRAMES, default=["1h", "1d"])
+    parser.add_argument("--skip-strategies", nargs="+", default=[],
+                        help="本次批量任务明确跳过的策略包名；不会标记为已完成")
+    parser.add_argument("--start-at-strategy", default=None,
+                        help="从指定策略开始运行；之前的任务仅做范围跳过，不改完成状态")
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parent
@@ -66,6 +70,12 @@ def main() -> int:
     log_dir.mkdir(parents=True, exist_ok=True)
     catalog = discover_strategy_catalog()
     packages = [item["name"] for item in catalog if item["category"] in TARGET_CATEGORIES]
+    skip_strategies = set(args.skip_strategies)
+    unknown_skips = skip_strategies.difference(packages)
+    if unknown_skips:
+        parser.error(f"未知或不属于前四类的跳过策略: {', '.join(sorted(unknown_skips))}")
+    if args.start_at_strategy and args.start_at_strategy not in packages:
+        parser.error(f"未知或不属于前四类的起始策略: {args.start_at_strategy}")
     directions = tuple(args.directions)
     timeframes = tuple(args.timeframes)
     digest = hashlib.sha256((root / "SOURCE_MANIFEST.json").read_bytes())
@@ -88,9 +98,13 @@ def main() -> int:
     run_hash = hashlib.sha256(job_config.encode()).hexdigest()[:10]
     scope = "all" if sorted(set(symbols)) == available_symbols else "_".join(symbols)
     jobs = [(p, d, t, f"{p}_{d}_{t}_{scope}") for p in packages for t in timeframes for d in directions]
-    plan = dict(source_hash=source_hash, batch_fingerprint=run_hash, volume=1, adapter="passthrough",
+    plan = dict(source_hash=source_hash, batch_fingerprint=run_hash,
+                volume=1, adapter="passthrough",
                 symbols=symbols, data_dir=str(Path(args.data_dir).resolve()),
-                start=args.start, end=args.end, jobs=[dict(strategy=p, direction=d, timeframe=t, prefix=prefix)
+                start=args.start, end=args.end,
+                start_at_strategy=args.start_at_strategy,
+                skip_strategies=sorted(skip_strategies),
+                jobs=[dict(strategy=p, direction=d, timeframe=t, prefix=prefix)
                                                     for p,d,t,prefix in jobs])
     plan_path = output_dir / "runs" / f"batch_matrix_{run_hash}.json"
     plan_path.parent.mkdir(parents=True, exist_ok=True)
@@ -102,10 +116,31 @@ def main() -> int:
     print(f"批量回测策略数: {len(packages)}")
     print(f"回测任务数: {len(jobs)}")
     print(f"周期: {', '.join(timeframes)} | 方向: {', '.join(directions)} | 每品种固定 1 手")
+    if skip_strategies:
+        print(f"本次用户跳过: {', '.join(sorted(skip_strategies))}")
+    if args.start_at_strategy:
+        print(f"本次从策略开始: {args.start_at_strategy}")
 
-    completed = skipped = failed = 0
+    completed = skipped = range_skipped = excluded = failed = 0
+    start_reached = args.start_at_strategy is None
     for index, (package, direction, timeframe, prefix) in enumerate(jobs, 1):
         completion_path = output_dir / "runs" / f"{prefix}.complete.json"
+        if package in skip_strategies:
+            completion_path.write_text(json.dumps(dict(
+                status="skipped_by_user", batch_fingerprint=run_hash,
+                prefix=prefix, strategy=package,
+                skipped_at=datetime.now().isoformat(timespec="seconds"),
+            ), ensure_ascii=False, indent=2), encoding="utf-8")
+            excluded += 1
+            print(f"[{index}/{len(jobs)}] 用户跳过: {prefix}")
+            continue
+        if not start_reached:
+            if package == args.start_at_strategy:
+                start_reached = True
+            else:
+                range_skipped += 1
+                print(f"[{index}/{len(jobs)}] 起始范围前跳过: {prefix}")
+                continue
         previous = {}
         if completion_path.is_file():
             try:
@@ -149,7 +184,8 @@ def main() -> int:
             failed += 1
             print(f"[{index}/{len(jobs)}] 失败: {prefix}，详见 {log_path}")
 
-    print(f"批量回测结束：完成 {completed}，跳过 {skipped}，失败 {failed}")
+    print(f"批量回测结束：完成 {completed}，已有结果 {skipped}，"
+          f"起始范围前 {range_skipped}，用户跳过 {excluded}，失败 {failed}")
     return 1 if failed else 0
 
 
